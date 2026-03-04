@@ -9,7 +9,9 @@ export const StudentList = ({ students }: StudentListProps) => {
   return (
     <ul className="student-list">
       {students.map(student => (
-        <StudentsItem key={student.id} student={student} />
+        <li key={student.id}>
+          <StudentsItem student={student} />
+        </li>
       ))}
     </ul>
   );

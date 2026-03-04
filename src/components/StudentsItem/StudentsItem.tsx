@@ -10,14 +10,12 @@ export const StudentsItem = ({ student }: StudentItemProps) => {
   };
   return (
     <>
-      <li key={student.id}>
-        <p>Ім'я студента: {student.name}</p>
-        <p>Вік студента: {student.age}</p>
-        <p>Курс навчання: {student.course}</p>
-        <img src={student.avatar} alt="avatar" />
-        {student.isOnline ? <p>Online</p> : <p>Offline</p>}
-        <button onClick={handleClick}>Подивитись профіль</button>
-      </li>
+      <p>Ім'я студента: {student.name}</p>
+      <p>Вік студента: {student.age}</p>
+      <p>Курс навчання: {student.course}</p>
+      <img src={student.avatar} alt="avatar" />
+      {student.isOnline ? <p>Online</p> : <p>Offline</p>}
+      <button onClick={handleClick}>Подивитись профіль</button>
     </>
   );
 };
